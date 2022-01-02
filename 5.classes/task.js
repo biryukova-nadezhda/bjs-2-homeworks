@@ -63,7 +63,6 @@ class DetectiveBook extends Book {
     }
 }
 
-
 //Задача №2
 
 class Library {
