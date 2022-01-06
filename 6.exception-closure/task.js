@@ -11,12 +11,7 @@ function parseCount(str) {
 function validateCount(str) {
 
     try {
-        let parse = parseCount(str);
-        if (isNaN(parse)) {
-            throw new Error("Ошибка");
-        } else {
-            return parse;
-        }
+        return parseCount(str);
     } catch (error) {
         return error;
     }
@@ -36,8 +31,7 @@ class Triangle {
     }
 
     getPerimeter() {
-        let perimetr = this.a + this.b + this.c;
-        return perimetr;
+        return this.a + this.b + this.c;
     }
 
     getArea() {
